@@ -2,6 +2,7 @@
   font-family: sans-serif;
   font-size: 16px;
   text-anchor: middle;
+  
 }
 
 .active {
@@ -24,11 +25,6 @@
 }
 
 /* font size dependent on radius, see app.js */
-.stateText {
-  font-family: sans-serif;
-  fill: #fff;
-  text-anchor: middle;
-}
 
 .stateCircle {
   fill: #89bdd3;
@@ -40,7 +36,7 @@
   margin: 0;
 }
 
-.d3-tip {
+/* .tooltip {
   padding: 6px;
   font-size: 12px;
   line-height: 1;
@@ -49,7 +45,30 @@
   text-align: center;
   text-transform: capitalize;
   background: rgba(0, 0, 0, 0.8);
+  background-color: gray; 
   border-radius: 4px;
+} */
+
+
+.tooltip {
+  position: absolute;
+  width: 135px;
+  height: 60px;
+  padding: 2px;
+  padding-top: 8px;
+  font: 12px sans-serif;
+  color: white;
+  text-align: center;
+  background: #551aaf;
+  border: 0;
+  border-radius: 10px;
+}
+
+.axisText {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #551aaf;
+  text-anchor: middle;
 }
 
 /* Mobile Rules */
